@@ -30,7 +30,7 @@ generateSpace();
 
 // ------------------ GLOBAL STATE ------------------
 let isAdmin = false;
-const ADMIN_PIN = "7029";
+const ADMIN_PIN = "7009";
 let activeMediaCategory = 'img';
 
 let pendingMediaAction = null; // To store action if user tries to interact while locked out
@@ -54,13 +54,15 @@ let mediaData = [
     { id: 'm13', type: 'img', title: 'Plastic pollution ', src: '8.jpg',locked: true },
     { id: 'm9', type: 'oth', title: 'Format,docx ', src: 'NOC Format.docx',locked: true },
     { id: 'm14', type: 'vid', title: 'Plastic pollution ', src: '2.mp4',locked: true },
-    { id: 'm6', type: 'oth', title: 'Plastic pollution', src: 'Previous.html', locked: true }
+    { id: 'm6', type: 'oth', title: 'Plastic pollution', src: 'Previous.html', locked: true },
+    { id: 'm19', type: 'oth', title: 'Vos ', src: 'Vos.PDF',locked: true },
+    { id: 'm20', type: 'oth', title: 'NOC', src: 'NOC.PDF', locked: true }
     
 ];
 
 let teamData = [
-    { id: 1, name: "Muhammed", institution: "TTVHSS", age: 17, role: "Founder,all in all" },
-    { id: 2, name: "Sinan", institution: "TTVHSS", age: 14, role: "Founder,all in all" }
+    { id: 1, name: "Muhammed Alyesah P.S", institution: "TTVHSS", age: 17, role: "Member" },
+    { id: 2, name: "Muhammed Sinan P.S", institution: "TTVHSS", age: 14, role: "Member" }
 ];
 
 let relayEmail ="Will be available soon" ;
