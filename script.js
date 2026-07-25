@@ -56,7 +56,8 @@ let mediaData = [
     { id: 'm14', type: 'vid', title: 'Plastic pollution ', src: '2.mp4',locked: true },
     { id: 'm6', type: 'oth', title: 'Plastic pollution', src: 'Previous.html', locked: true },
     { id: 'm19', type: 'oth', title: 'Vos ', src: 'Vos.PDF',locked: true },
-    { id: 'm20', type: 'oth', title: 'NOC', src: 'NOC.PDF', locked: true }
+    { id: 'm20', type: 'oth', title: 'NOC', src: 'NOC.PDF', locked: true },
+    { id: 'm21', type: 'oth', title: 'Net ', src: 'Idea.PDF',locked: true }
     
 ];
 
