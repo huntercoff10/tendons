@@ -1,24 +1,10 @@
-/* ==========================================
-   Base Styling & Scrollbars
-   ========================================== */
+/* Base styling & scrollbar */
 body { 
     margin: 0; 
     overflow: hidden; 
 }
 
-/* Custom Thin Scrollbar */
-.custom-scrollbar::-webkit-scrollbar { 
-    width: 4px; 
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb { 
-    background: rgba(22, 163, 74, 0.4); 
-    border-radius: 4px; 
-}
-
-/* ==========================================
-   Animated Background
-   ========================================== */
+/* Pleasant Animated Background */
 .animated-bg {
     background: linear-gradient(-45deg, #e5e7eb, #dcfce7, #f3f4f6, #bbf7d0);
     background-size: 400% 400%;
@@ -31,9 +17,16 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* ==========================================
-   Info Cards with Running Border Animation
-   ========================================== */
+.custom-scrollbar::-webkit-scrollbar { 
+    width: 4px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb { 
+    background: rgba(22, 163, 74, 0.4); 
+    border-radius: 4px; 
+}
+
+/* Running Green Line Info Cards */
 .info-card {
     position: relative;
     background-color: rgba(255, 255, 255, 0.95);
@@ -62,25 +55,17 @@ body {
     to { background-position: -200% center; }
 }
 
-/* ==========================================
-   View Transitions & Accordion Mechanics
-   ========================================== */
+/* Fade-in Animation for Views */
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(10px); 
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
     animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-/* Accordion Content Expand/Collapse */
+/* Accordion Transitions */
 .slab-content { 
     max-height: 70px; 
     overflow: hidden; 
@@ -95,22 +80,12 @@ body {
     -webkit-mask-image: none;
 }
 
-/* Landing Curtain Transition */
+/* Home Curtain Transition */
 #homeCurtain { 
     transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); 
 }
 
 .curtain-up { 
     transform: translateY(-100%); 
-}
-
-/* Slow Spin Animation (Replaces inline Tailwind script option) */
-.animate-spin-slow {
-    animation: spin 8s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }
 
